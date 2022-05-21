@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Rabico - Engenharia de Software</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="titulo">Rabico - Engenharia de Software</h1>
+			</div>
+		</header>
+
+		<main>
+			<section class="container">
+				<h2>Clientes</h2>
+				<label class="label-filtra" for="filtrar-tabela">Filtre:</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Telefone</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-clientes">
+						<tr class="cliente" id="primeiro-cliente">
+							<td class="info-nome">Paulo</td>
+							<td class="info-telefone">(85) 98989-0909</td>
+						</tr>
+					</tbody>
+				</table>
+				<span id="erro-ajax" class="invisivel">Erro ao buscar os clientes</span>
+			</section>
+			<section class="container section2">
+				<h2 id="titulo-form">Adicionar novo cliente</h2>
+				<ul id="mensagens-erro"></ul>
+				<form id="form-adiciona">
+					<div class="grupo">
+						<label for="nome" class="label-grupo">Nome:</label>
+						<input id="nome" name="nome" type="text" placeholder="Digite o nome do cliente" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="telefone" class="label-grupo">Telefone:</label>
+						<input id="telefone" name="telefone" type="text" placeholder="Digite o telefone do cliente" class="campo campo-medio">
+					</div>
+	
+					<button id="adicionar-cliente" class="botao bto-principal">Adicionar</button>
+				</form>
+			</section>
+		</main>
+
+		<script src="js/form.js" ></script>
+		<script src="js/remover-paciente.js" ></script>
+		<script src="js/filtra.js" ></script>
+	</body>
+</html>
