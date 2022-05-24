@@ -160,6 +160,11 @@ button[disabled=disabled], button:disabled {
 	margin-top: 50px;
 }
 
+.vermelho-menor {
+	color: red;
+	font-size: 11px;
+}
+
 @media screen and (max-device-width: 768px) {
 	.container {
 		width: 90%;
@@ -247,4 +252,9 @@ button[disabled=disabled], button:disabled {
 		height: 80px;
 		margin: 10px 0px;
 	}
+
+	.vermelho-menor {
+		font-size: 24px;
+	}
 }
+
